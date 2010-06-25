@@ -1,0 +1,138 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Turf Club Photos</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link REL=StyleSheet HREF="assets/css/turf.css" TYPE="text/css" MEDIA=screen>
+        <script type="text/javascript" src="assets/js/jquery-1.4.2.min.js"></script>
+
+<!-- You need to specify the path to Yoxview below. I just put it in a "yoxview" subfolder. -->
+<script type="text/javascript" src="yoxview/yoxview-init.js"></script>
+
+ <script type="text/javascript">
+$(document).ready(function(){
+$("#yoxview_picasa").yoxview(
+{
+displayImageTitleByDefault: true
+},
+{
+dataSource: 'picasa',
+dataSourceOptions: {
+user: 'maclown',
+album: 'FAVORITES'
+//<!--authkey: 'the authkey here (for unlisted albums)',-->
+thumbnailsMaxSize: 250,
+setTitle:false
+}
+}
+);
+});
+
+</script>
+</head>
+<body>
+    <div class="box">
+    <table cellspacing="0" cellpadding="0">
+                <tr>
+                    <td colspan="2">
+                        <div class="nav">
+                            <ul>
+
+                                <li><a href="index.html">HOME</a></li>
+                                <li><a href="directions.html">DIRECTIONS</a></li>
+                                <li><a href="booking.html">BOOKING</a></li>
+                                <li><a class="currentpage" href="photos.html">PHOTOS</a></li>
+                                <li><a href="about.html">ABOUT</a></li>
+                            </ul>
+
+                        </div>
+                    </td>
+                    <td rowspan="2" width="300" height="300">
+                        <div class="tonight">
+                            <div class="title">TONIGHT</div>
+                            <div id="todaysEvent"></div>
+                            <div class="sponsor"><a href="http://first-avenue.com">First Avenue</a> presents:</div>
+
+                            <div class="headliner">Malachi Constant </div><span class="band">with Superhopper & Grotto</span>
+                            <div class="doors">Doors 9pm | $3 Cover</div>
+                            <div class="description">Cool things happen when good music
+                                comes out of good people. I like french fries and spaceships.</div>
+                        </div>
+
+
+                        <div class="featured">
+
+                            <div class="featuredcontent">
+                                <div class="title">FEATURED EVENTS</div><hr />
+                                <div class="date">Fri Sept 3</div>
+                                <div class="sponsor"><a href="http://first-avenue.com">First Avenue</a> presents:</div>
+                                <div class="headliner">Jazz Implosion</div><span class="band">with Fat Kid Wednesday & Trash Film Debauchery</span>
+
+                                <div class="doors">Doors 9:00pm | $3 Cover | Clown Lounge</div>
+                                <div class="description">Cool things happen when good music
+                                    comes out of good people. I like french fries and spaceships.</div>
+                                <hr />
+                                <div class="date">Wed Oct 28</div>
+                                <div class="sponsor"><a href="http://first-avenue.com">First Avenue</a> presents:</div>
+                                <div class="headliner">Pentagram</div><span class="band"> with Zebulon Pike, Lozen, DJ Savage Clone</span>
+
+                                <div class="doors">Doors 9:00pm | $3 Cover | Main Stage</div>
+                                <div class="description">Cool things happen when good music
+                                    comes out of good people. I like french fries and spaceships.</div>
+                                <hr />
+                                <div class="date">Wed Oct 28</div>
+                                <div class="sponsor"><a href="http://first-avenue.com">First Avenue</a> presents:</div>
+                                <div class="headliner">Malachi Constant </div><span class="band">with Superhopper & Grotto</span>
+
+                                <div class="doors">Doors 9:00pm | $3 Cover | Old Stage</div>
+                                <div class="description">Cool things happen when good music
+                                    comes out of good people. I like french fries and spaceships.</div>
+                                <hr />
+                                <div class="date">Wed Oct 28</div>
+                                <div class="sponsor"><a href="http://first-avenue.com">First Avenue</a> presents:</div>
+                                <div class="headliner">Malachi Constant </div><span class="band">with Superhopper & Grotto</span>
+
+                                <div class="doors">Doors 9:00pm | $3 Cover | Main Stage</div>
+                                <div class="description">Cool things happen when good music
+                                    comes out of good people. I like french fries and spaceships.</div>
+                                <hr />
+                                <div class="date">Wed Oct 28</div>
+                                <div class="sponsor"><a href="http://first-avenue.com">First Avenue</a> presents:</div>
+                                <div class="headliner">Malachi Constant </div><span class="band">with Superhopper & Grotto</span>
+
+                                <div class="doors">Doors 9:00pm | $3 Cover | Main Stage</div>
+                                <div class="description">Cool things happen when good music
+                                    comes out of good people. I like french fries and spaceships.</div>
+                                <hr />
+                            </div>
+                        </div>
+
+                    </td>
+
+
+                </tr>
+                <tr>
+                    <td border="0">
+                        <div class="mainphoto">
+                            <div class="gallery">
+                                
+<div id="yoxview_picasa"></div>
+
+                            <div class="logo">
+                                <img src="assets/images/invertedlogo.png" width="150px" height="150px" />
+
+                            </div>
+                           
+   </div>
+
+                    </td>
+
+
+                </tr>
+            </table>
+</div>
+
+</body>
+</html>
+
+

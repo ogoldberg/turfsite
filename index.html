@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <title>Turf Club | Home</title>
+	<meta name="google-site-verification" content="9z6PbzsrXNXafuQ77iAWDRFdkgzN2GECQx3Fal2NjzI" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="description" content="Live music at The Turf Club. 1601 University Avenue (at Snelling). Saint Paul, MN 55104. 651-647-0486. " />
+	<meta name="keywords" content="music,live music,beer,St Paul,Saint Paul,MN,Minnesota,concert,rock,night club" />
+	<meta name="author" content="Oren Goldberg" />
+        <link REL=StyleSheet HREF="assets/css/turf.css" TYPE="text/css" MEDIA="screen">
+	<link rel="shortcut icon" href="favicon.ico" >
+       <script type="text/javascript" src="assets/js/jquery-1.4.2.min.js"></script>
+        <script type="text/javascript" src="assets/js/jquery.easing.1.3.js"></script>
+        <script type="text/javascript" src="assets/js/events.js"></script>
+         <script type="text/javascript" src="assets/js/mobileDetect.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $('#panel').hide();
+                $('.trigger').click(function() {
+                    $(this).next().animate(
+                    {'height':'toggle'}, 'slow', 'easeInOutCirc'
+                );
+                $.ajax({
+                    url: 'events/futureEvents.json',
+                    dataType: 'json',
+                    success: function(data)  {
+                        $("#futureEvents").html(data.result.futureEvents)
+                    }
+                });
+            });
+                
+            });
+        </script>
+         <script type="text/javascript" src="assets/js/mobileDetect.js"></script>
+	<script type="text/javascript">
+
+  		var _gaq = _gaq || [];
+  		_gaq.push(['_setAccount', 'UA-17123330-1']);
+ 		 _gaq.push(['_trackPageview']);
+
+  		(function() {
+   		 var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+   		 ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+   		 var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+    </head>
+
+    <body>
+        <div class="box">
+        <table cellspacing="0" cellpadding="0">
+            <tr>
+                <td colspan="2">
+                    <div class="nav">
+                        <ul>
+                            <li><a class="currentpage" href="index.html">HOME</a></li>
+                            <li><a href="directions.html">DIRECTIONS</a></li>
+                            <li><a href="booking.html">BOOKING</a></li>
+                            <li><a href="photos.html">PHOTOS</a></li>
+                            <li><a href="friends.html">FRIENDS</a></li>
+			    <li><a href="about.html">ABOUT</a></li>
+                        </ul>
+                    </div>
+                </td>
+                <td rowspan="2" width="300" height="300">
+                    <div id="sidePanel">
+                    <div id="todaysEvent"></div>
+                    <div id="featuredEvents"></div>
+                </div>
+                    </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="main">
+                        <div class="logo">
+                        <img src="assets/images/invertedlogo.png" alt="turf club logo" width="150px" height="150px" />
+                    </div>
+                        <a href="#" class="trigger">FULL CALENDAR</a>
+                        <div id="panel">
+                            <div id="futureEvents"></div>
+                        </div>
+                        <div class="social">
+                        <ul>
+                            <li><a href="http://www.facebook.com/pages/St-Paul/Turf-Club/32267149404?ref=ts"><img src="assets/images/facebook-logo.png" width="50px" height="50px" alt="Turf Club on Facebook" title="Turf Club on Facebook" /></a></li>
+                            <li><a href="http://www.twitter.com/turf_club"><img src="assets/images/twitter-logo.png" alt="Turf Club on Twitter" title="Turf Club on Twitter" width="50px" height="50px" /></a></li>
+                            <li><a href="http://www.flickr.com/groups/turfclub"><img src="assets/images/flickr-logo.png" width="50px" height="50px" alt="Turf Club on Flickr" title="Turf Club on Flickr"/></a></li>
+                            <li><a href="http://www.myspace.com/turfclub"><img src="assets/images/myspace-logo.png" width="50px" height="50px" alt="Turf Club on Myspace" title="Turf Club on Myspace"/></a></li>
+                        </ul>
+                        <div class="twtfeed"><iframe src="http://s1.rsspump.com/rss.aspx?s=49d5215b-2d6c-41aa-90e1-b5e048fa4067&amp;speed=1&amp;t=1&amp;d=1&amp;u=0&amp;p=0&amp;b=1&amp;ic=9&amp;font=Arial&amp;fontsize=12px&amp;bgcolor=006633&amp;color=FAFAFA&amp;type=fade&amp;su=0&amp;sub=0&amp;sw=0" frameborder="0" width="1015" height="16" scrolling="no" allowtransparency="true"></iframe><noframes><div style="background-color: #006633;"><a href="http://www.rsspump.com/?web_widget/rss_widget/twitter_widget" title="web widget">Twitter Widget</a></div></noframes></div>
+                    </div>
+                    </div>
+                </td>
+            </tr>
+        </table>
+	</div>
+	</div>
+        </div>
+    </body>
+</html>

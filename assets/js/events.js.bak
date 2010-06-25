@@ -1,0 +1,18 @@
+ $(document).ready(function(){
+          $.ajax({
+                        url: 'http://bookablevenue.com/turf/event/todaysEvent',
+                        dataType: 'jsonp',
+                        success: function(data) {
+                            $("#todaysEvent").html(data.result.todaysEvent)
+                        }
+                        });
+          $.ajax({
+                        url: 'http://bookablevenue.com/turf/event/featuredEvents',
+                        dataType: 'jsonp',
+                        success: function(data)  {
+                            $("#featuredEvents").html(data.result.featuredEvents)
+                        }
+                        });
+ });
+                        
+                

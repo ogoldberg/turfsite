@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <title>Turf Club | Mobile</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link REL=StyleSheet HREF="assets/css/turf.css" TYPE="text/css" MEDIA="screen">
+	<link rel="shortcut icon" href="favicon.ico" >
+	<script type="text/javascript" src="assets/js/jquery-1.4.2.min.js"></script>
+	<script type="text/javascript">
+            $(document).ready(function() {
+		$.ajax({
+                    url: 'http://bookablevenue.com/turf/event/futureEvents',
+                    dataType: 'jsonp',
+                    success: function(data)  {
+                        $("#futureEvents").html(data.result.futureEvents)
+                    }
+                });
+                });
+            </script>
+    </head>
+
+    <body>
+<div class="mobile">
+Turf Club | Mobile<br />
+        <div class="nav">
+                        <ul>
+                            <li><a class="currentpage" href="index.html">HOME</a></li>
+                            <li><a href="http://maps.google.com/maps?f=q&source=embed&hl=en&geocode=&q=Turf+Club+Inc,+1601+University+Avenue+West,+St+Paul,+MN+55104-3820&sll=44.95584,-93.167925&sspn=0.008625,0.01929&ie=UTF8&hq=Turf+Club+Inc,&hnear=1601+University+Ave+W,+St+Paul,+MN+55104&cid=2719422428407048117&ll=44.964251,-93.163719&spn=0.021255,0.036478&z=14&iwloc=A">DIRECTIONS</a></li>
+                            <li><a href="booking.html">BOOKING</a></li>
+                            <li><a href="friends.html">FRIENDS</a></li>
+			    <li><a href="about.html">ABOUT</a></li>
+                        </ul>
+                    </div><br /><br /><br /><br />
+                    <div id="futureEvents"></div></div>
+                </body>
+</html>
