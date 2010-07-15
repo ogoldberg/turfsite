@@ -394,7 +394,7 @@ table tr td {
     color: black;
 }
 
-#panel {
+#panel, #pastEvents {
     background: #000000;
     border:1px solid #111111;
     -moz-border-radius-topright: 20px;
@@ -411,18 +411,18 @@ table tr td {
     font-family: Helvetica, Arial, sans-serif;
 }
 
-#panel p{
+#panel p, #pastEvents p{
     padding: 0;
     color: #cccccc;
 }
 
-#panel a, #panel a:visited {
+#panel a, #panel a:visited , #pastEvents a , #pastEvents a:visited{
     color: #ffffff;
     text-decoration: none;
 
 }
 
-#panel a:hover, #panel a:hover {
+#panel a:hover, #pastEvents a:hover{
     color: #ffffff;
     text-decoration: none;
     border-bottom: 1px solid #ffffff;
@@ -436,7 +436,7 @@ table tr td {
     
 }
 
-#panel .title {
+#panel .title, #pastEvents .title {
     color: white;
     font-size: 1.5em;
     padding-top: 4px;
@@ -445,26 +445,26 @@ table tr td {
     letter-spacing: -2px;
 }
 
-#panel .sponsor {
+#panel .sponsor, #pastEvents .sponsor {
     color: white;
     font-style: italic;
     font-size: .8em;
 }
 
-#panel .date {
+#panel .date, #pastEvents .date {
     color: #006633;
     font-weight: bold;
     font-size: 1em;
 }
 
-#panel .doors {
+#panel .doors, #pastEvents .doors {
     color: white;
     font-weight: bold;
     font-size: 1em;
     margin-top: 7px;
 }
 
-#panel .description {
+#panel .description, #pastEvents .description {
     color: #006633;
     font-size: 1em;
     padding-right: 5px;
@@ -472,26 +472,26 @@ table tr td {
     
 }
 
-#panel .headliner {
+#panel .headliner, #pastEvents .headliner{
     color: white;
     font-size: 1.3em;
     font-weight: bold;
 }
 
-#panel .band {
+#panel .band, #pastEvents .band {
     color: #006633;
     font-family: Helvetica, Arial, sans-serif;
     font-size: 1.1em;
 }
 
-#panel .eventtitle {
+#panel .eventtitle, #pastEvents .eventtitle {
     color: #aca400;
     font-size: 1.5em;
     font-weight: bold;
     font-variant:small-caps;
 }
 
-#paneltitle{
+#paneltitle {
     color: #aca400;
     font-size: 2em;
     font-weight: bold;
